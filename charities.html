@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore 30 Australian charities available through Lend With Heart." />
+    <title>Choose your charity — Lend With Heart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="directory-page">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Lend With Heart home"><span class="brand-mark">♡</span><span>Lend With Heart</span></a>
+      <nav aria-label="Main navigation">
+        <a href="index.html#how-it-works">How it works</a><a class="active" href="charities.html" aria-current="page">Charities</a><a href="index.html#calculator">Calculator</a><a href="index.html#about">About</a>
+      </nav>
+      <a class="button button-small" href="index.html#apply">Get started</a>
+    </header>
+
+    <main>
+      <section class="directory-hero">
+        <a class="back-link" href="index.html#charities">← Back to home</a>
+        <p class="eyebrow"><span></span> Your loan, your cause</p>
+        <h1>Choose where your<br /><em>good goes.</em></h1>
+        <p>Explore 30 well-known Australian charities across mental health, children, community, medical research, animals and the environment.</p>
+        <div class="directory-stat"><strong>30</strong><span>causes to<br />choose from</span></div>
+      </section>
+
+      <section class="directory-content" aria-labelledby="directory-title">
+        <div class="directory-toolbar">
+          <div><p class="eyebrow"><span></span> Charity directory</p><h2 id="directory-title">Find a cause that matters to you.</h2></div>
+          <label class="charity-search"><span aria-hidden="true">⌕</span><input id="charitySearch" type="search" placeholder="Search charities" autocomplete="off" /></label>
+        </div>
+        <div class="filter-row" aria-label="Filter charities by cause">
+          <button class="filter-chip active" type="button" data-category="All">All causes</button>
+          <button class="filter-chip" type="button" data-category="Mental health">Mental health</button>
+          <button class="filter-chip" type="button" data-category="Children & education">Children &amp; education</button>
+          <button class="filter-chip" type="button" data-category="Health & research">Health &amp; research</button>
+          <button class="filter-chip" type="button" data-category="Community">Community</button>
+          <button class="filter-chip" type="button" data-category="Animals & environment">Animals &amp; environment</button>
+        </div>
+        <p class="result-count" id="resultCount" aria-live="polite">Showing all 30 charities</p>
+        <div class="directory-grid" id="charityDirectory"></div>
+        <div class="empty-state" id="emptyState" hidden><span>♡</span><h3>No charities found</h3><p>Try a different search or choose another category.</p></div>
+      </section>
+
+      <section class="directory-cta">
+        <div><p class="eyebrow"><span></span> Found your cause?</p><h2>Your home loan could help them do more.</h2></div>
+        <a class="button button-light" href="index.html#apply">Start your application <b>→</b></a>
+      </section>
+    </main>
+
+    <footer id="about"><a class="brand" href="index.html"><span class="brand-mark">♡</span><span>Lend With Heart</span></a><p>Mortgage broking with purpose.</p><small>© 2026 Lend With Heart. Charity names and logos are used here as a concept only; formal partnerships and brand permissions are required before launch.</small></footer>
+    <script src="charities.js"></script>
+  </body>
+</html>

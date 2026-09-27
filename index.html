@@ -16,7 +16,7 @@
       <nav aria-label="Main navigation">
         <a href="#how-it-works">How it works</a><a href="charities.html">Charities</a><a href="#calculator">Calculator</a><a href="#about">About</a>
       </nav>
-      <a class="button button-small" href="#apply">Get started</a>
+      <a class="button button-small" href="application.html">Get started</a>
     </header>
 
     <main id="top">
@@ -25,7 +25,7 @@
           <p class="eyebrow"><span></span> Finance with a little more heart</p>
           <h1 id="hero-title">Your home loan can <em>do more good.</em></h1>
           <p class="intro">Choose a charity you care about. When your loan settles, we donate 25% of the broker commission we earn.</p>
-          <div class="hero-actions"><a class="button" href="#apply">Start your application <b>→</b></a><a class="text-link" href="#how-it-works">See how it works <span>↓</span></a></div>
+          <div class="hero-actions"><a class="button" href="application.html">Start your application <b>→</b></a><a class="text-link" href="#how-it-works">See how it works <span>↓</span></a></div>
           <div class="trust-row"><div class="avatars"><span>J</span><span>K</span><span>S</span></div><p><strong>1,200+ Australians</strong><br />have made their loan count twice</p></div>
         </div>
         <div class="hero-visual" aria-label="A home and a meaningful donation, illustrated">
@@ -44,19 +44,19 @@
             <label>Loan type <div class="field select-wrap"><select id="loanType" aria-label="Loan type"><option value="home">Home loan</option><option value="investment">Investment loan</option><option value="refinance">Refinance</option></select></div></label>
             <label>Interest rate <div class="field suffix"><input id="interestRate" type="number" min="1" max="15" step="0.01" value="6.14" aria-label="Interest rate" /><span>%</span></div></label>
           </form>
-          <aside class="impact-panel" aria-live="polite"><div class="impact-icon">♡</div><div><p>Your loan could give back</p><strong id="impactAmount">$1,625</strong><span>to your chosen charity</span><small>25% of our estimated broker commission</small></div></aside>
+          <aside class="impact-panel" aria-live="polite"><div class="impact-icon">♡</div><div class="impact-copy"><p>Your loan could give back</p><strong id="impactAmount">$1,625</strong><span class="impact-beneficiary">to your chosen charity</span><small>Based on 25% of estimated upfront commission</small><div class="impact-timing"><span>Payment type</span><b>One-off donation at settlement</b></div></div></aside>
         </div>
-        <p class="calculator-note">This is an estimate only. Your final donation is confirmed when your loan settles. <a href="#about">How we calculate it →</a></p>
+        <p class="calculator-note"><strong>One-off vs yearly:</strong> this calculator uses estimated upfront commission, which is paid once when the loan settles. Trail commission is an ongoing annual payment and is not included in this estimate. <a href="#how-it-works">Learn about commissions →</a></p>
       </section>
 
       <section id="charities" class="charities-section" aria-labelledby="charities-title">
         <div class="section-heading split"><div><p class="eyebrow"><span></span> Make it personal</p><h2 id="charities-title">Choose a cause<br />close to home.</h2></div><p>Pick a cause during your application and we’ll let them know when your donation is on its way.</p></div>
         <div class="charity-grid" role="list">
-          <button class="charity-card selected" type="button" role="listitem" data-charity="Lifeline" data-color="#dce8c4"><span class="charity-icon logo-bg"><img src="https://www.lifeline.org.au/sites/default/files/2025-11/page-logo-default.png" alt="Lifeline logo" /></span><strong>Lifeline</strong><small>Crisis support &amp; suicide prevention</small><span class="choose">Selected <b>✓</b></span></button>
-          <button class="charity-card" type="button" role="listitem" data-charity="Foodbank Australia" data-color="#d7eaf2"><span class="charity-icon logo-bg"><img src="https://www.foodbank.org.au/wp-content/uploads/FoodBank_Logo.svg" alt="Foodbank Australia logo" /></span><strong>Foodbank Australia</strong><small>Fighting food insecurity</small><span class="choose">Choose this cause <b>→</b></span></button>
-          <button class="charity-card" type="button" role="listitem" data-charity="The Smith Family" data-color="#f6dbd2"><span class="charity-icon logo-bg"><img src="https://www.thesmithfamily.com.au/-/media/site/global/the-smith-family-logo-desktop-168.svg" alt="The Smith Family logo" /></span><strong>The Smith Family</strong><small>Helping children succeed at school</small><span class="choose">Choose this cause <b>→</b></span></button>
-          <button class="charity-card" type="button" role="listitem" data-charity="Greening Australia" data-color="#fae3c2"><span class="charity-icon logo-bg"><img src="https://www.greeningaustralia.org.au/wp-content/uploads/2017/11/GreeningAustralia_Logo_Stacked_2.gif" alt="Greening Australia logo" /></span><strong>Greening Australia</strong><small>Restoring nature at scale</small><span class="choose">Choose this cause <b>→</b></span></button>
-          <button class="charity-card" type="button" role="listitem" data-charity="RSPCA Australia" data-color="#e1eac9"><span class="charity-icon logo-bg"><img src="https://www.rspca.org.au/_resources/themes/rspca/icons/logo.svg" alt="RSPCA Australia logo" /></span><strong>RSPCA Australia</strong><small>Protecting animals from cruelty</small><span class="choose">Choose this cause <b>→</b></span></button>
+          <button class="charity-card selected" type="button" role="listitem" data-charity="Lifeline" data-color="#dce8c4"><span class="charity-media"><span class="charity-icon logo-bg"><img src="https://www.lifeline.org.au/sites/default/files/2025-11/page-logo-default.png" alt="Lifeline logo" /></span><span class="charity-photo"><img src="https://www.lifeline.org.au/sites/default/files/styles/card_2_col_fb/public/2025-11/Lifeline%20branded%20%E2%80%93%20Group%20shot.jpg" alt="Lifeline volunteers together" /></span></span><strong>Lifeline</strong><small>Crisis support &amp; suicide prevention</small><span class="choose">Selected <b>✓</b></span></button>
+          <button class="charity-card" type="button" role="listitem" data-charity="Foodbank Australia" data-color="#d7eaf2"><span class="charity-media"><span class="charity-icon logo-bg"><img src="https://www.foodbank.org.au/wp-content/uploads/FoodBank_Logo.svg" alt="Foodbank Australia logo" /></span><span class="charity-photo"><img src="https://www.foodbank.org.au/wp-content/uploads/FBV-volunteers-packing-lettuces-in-hampers-in-Foodbank-warehouse-1.png" alt="Foodbank volunteers packing fresh food" /></span></span><strong>Foodbank Australia</strong><small>Fighting food insecurity</small><span class="choose">Choose this cause <b>→</b></span></button>
+          <button class="charity-card" type="button" role="listitem" data-charity="The Smith Family" data-color="#f6dbd2"><span class="charity-media"><span class="charity-icon logo-bg"><img src="https://www.thesmithfamily.com.au/-/media/site/global/the-smith-family-logo-desktop-168.svg" alt="The Smith Family logo" /></span><span class="charity-photo"><img src="https://www.thesmithfamily.com.au/-/media/images/programs/lets-read/mother-daughter-uniform-reading.jpg" alt="A parent and child reading together" /></span></span><strong>The Smith Family</strong><small>Helping children succeed at school</small><span class="choose">Choose this cause <b>→</b></span></button>
+          <button class="charity-card" type="button" role="listitem" data-charity="Greening Australia" data-color="#fae3c2"><span class="charity-media"><span class="charity-icon logo-bg"><img src="https://www.greeningaustralia.org.au/wp-content/uploads/2017/11/GreeningAustralia_Logo_Stacked_2.gif" alt="Greening Australia logo" /></span><span class="charity-photo"><img src="https://www.greeningaustralia.org.au/wp-content/uploads/2022/02/OurImpact1.png" alt="Greening Australia staff and a landholder in a restoration area" /></span></span><strong>Greening Australia</strong><small>Restoring nature at scale</small><span class="choose">Choose this cause <b>→</b></span></button>
+          <button class="charity-card" type="button" role="listitem" data-charity="RSPCA Australia" data-color="#e1eac9"><span class="charity-media"><span class="charity-icon logo-bg"><img src="https://www.rspca.org.au/_resources/themes/rspca/icons/logo.svg" alt="RSPCA Australia logo" /></span><span class="charity-photo"><img src="https://rspca.sfo2.cdn.digitaloceanspaces.com/public/Uploads/support-us/rspca-australia-support-us-for-individuals-donate__FocusFillWzQ4MCwyNzIsInkiLDQ4XQ.jpg" alt="RSPCA staff caring for a dog" /></span></span><strong>RSPCA Australia</strong><small>Protecting animals from cruelty</small><span class="choose">Choose this cause <b>→</b></span></button>
         </div>
         <div class="all-charities"><span>✦</span><p><strong>30 charity options</strong><br />to choose from across Australia</p><a class="text-link" href="charities.html">Explore all causes <span>→</span></a></div>
       </section>
@@ -74,7 +74,7 @@
         </div>
       </section>
 
-      <section id="apply" class="cta"><div><p class="eyebrow"><span></span> Ready when you are</p><h2>A better loan starts<br />with one small step.</h2></div><a class="button button-light" href="mailto:hello@lendwithheart.com.au?subject=I'd%20like%20to%20get%20started">Let's get started <b>→</b></a></section>
+      <section id="apply" class="cta"><div><p class="eyebrow"><span></span> Ready when you are</p><h2>A better loan starts<br />with one small step.</h2></div><a class="button button-light" href="application.html">Let's get started <b>→</b></a></section>
     </main>
     <footer id="about"><a class="brand" href="#top"><span class="brand-mark">♡</span><span>Lend With Heart</span></a><p>Mortgage broking with purpose.</p><small>© 2026 Lend With Heart. Estimates shown are illustrative. Charity names and logos are used here as a concept only; formal partnerships and brand permissions are required before launch.</small></footer>
     <script src="script.js"></script>

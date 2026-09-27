@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Start your Lend With Heart mortgage broking application." />
+    <title>Start your application — Lend With Heart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="application-page">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Lend With Heart home"><span class="brand-mark">♡</span><span>Lend With Heart</span></a>
+      <nav aria-label="Main navigation"><a href="index.html#how-it-works">How it works</a><a href="charities.html">Charities</a><a href="index.html#calculator">Calculator</a><a href="index.html#about">About</a></nav>
+      <a class="application-help" href="mailto:hello@lendwithheart.com.au">Need help?</a>
+    </header>
+
+    <main class="application-layout">
+      <aside class="application-intro">
+        <a class="back-link" href="index.html">← Back to home</a>
+        <p class="eyebrow"><span></span> Let’s get started</p>
+        <h1>Tell us a little<br />about your <em>plans.</em></h1>
+        <p>This takes about five minutes. We’ll use your answers to understand what you need and arrange an introductory conversation.</p>
+        <ol class="application-steps"><li class="active"><span>1</span>Your details</li><li><span>2</span>Your loan</li><li><span>3</span>Your cause</li></ol>
+        <div class="privacy-note"><strong>Privacy first</strong><p>This prototype does not transmit or permanently store your information.</p></div>
+      </aside>
+
+      <section class="application-card" aria-labelledby="form-title">
+        <div id="formView">
+          <p class="form-kicker">Application enquiry</p>
+          <h2 id="form-title">Your details</h2>
+          <form id="applicationForm">
+            <fieldset><legend>About you</legend><div class="form-grid"><label>Full name<input name="fullName" autocomplete="name" required /></label><label>Email address<input type="email" name="email" autocomplete="email" required /></label><label>Phone number<input type="tel" name="phone" autocomplete="tel" required /></label><label>Preferred contact<select name="contact"><option>Phone</option><option>Email</option><option>Either is fine</option></select></label></div></fieldset>
+            <fieldset><legend>Your loan</legend><div class="form-grid"><label>What can we help with?<select name="loanGoal" required><option value="">Select one</option><option>Buy my first home</option><option>Buy my next home</option><option>Refinance my loan</option><option>Buy an investment property</option></select></label><label>Estimated loan amount<div class="form-money"><span>$</span><input id="applicationLoanAmount" name="loanAmount" type="number" min="50000" step="10000" placeholder="650000" required /></div></label><label>Property postcode<input name="postcode" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" placeholder="2000" /></label><label>Timeframe<select name="timeframe"><option>As soon as possible</option><option>Within 3 months</option><option>3–6 months</option><option>Just exploring</option></select></label></div></fieldset>
+            <fieldset><legend>Your charity</legend><div class="form-grid full"><label>Chosen charity<select id="applicationCharity" name="charity"><option value="">Choose later</option><option>Lifeline Australia</option><option>Beyond Blue</option><option>Black Dog Institute</option><option>Kids Helpline</option><option>The Smith Family</option><option>Indigenous Literacy Foundation</option><option>Cancer Council Australia</option><option>McGrath Foundation</option><option>Heart Foundation</option><option>Dementia Australia</option><option>The Fred Hollows Foundation</option><option>Royal Flying Doctor Service</option><option>Australian Red Cross</option><option>Foodbank Australia</option><option>OzHarvest</option><option>Orange Sky Australia</option><option>Mission Australia</option><option>The Salvation Army Australia</option><option>St Vincent de Paul Society</option><option>World Vision Australia</option><option>UNICEF Australia</option><option>RSPCA Australia</option><option>WIRES</option><option>Greening Australia</option><option>Guide Dogs Australia</option><option>Surf Life Saving Australia</option><option>Variety Australia</option><option>Canteen Australia</option><option>Make-A-Wish Australia</option><option>Movember</option></select></label><a class="browse-charities" href="charities.html">Browse all charities →</a><label>Anything else we should know?<textarea name="notes" rows="4" placeholder="Tell us about your plans or any questions you have."></textarea></label></div></fieldset>
+            <label class="consent"><input type="checkbox" required /><span>I agree to be contacted about this enquiry and understand this form does not constitute credit advice or loan approval.</span></label>
+            <button class="button form-submit" type="submit">Submit application enquiry <b>→</b></button>
+          </form>
+        </div>
+        <div class="form-success" id="formSuccess" hidden><span>✓</span><p class="form-kicker">Enquiry prepared</p><h2>Thanks, <span id="successName">there</span>.</h2><p>Your application details passed validation. This is currently a website prototype, so nothing was sent. Connect the form to your CRM or email service before launch.</p><a class="button" href="index.html">Return home</a></div>
+      </section>
+    </main>
+    <script src="application.js"></script>
+  </body>
+</html>

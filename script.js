@@ -2,7 +2,7 @@ const amountInput = document.querySelector('#loanAmount');
 const loanType = document.querySelector('#loanType');
 const rateInput = document.querySelector('#interestRate');
 const impactOutput = document.querySelector('#impactAmount');
-const impactLabel = document.querySelector('.impact-panel span');
+const impactLabel = document.querySelector('.impact-beneficiary');
 
 function updateImpact() {
   const amount = Math.max(0, Number(amountInput.value) || 0);
@@ -12,6 +12,7 @@ function updateImpact() {
   const rateAdjustment = 1 + ((rate - 6.14) * 0.015);
   const impact = Math.round((amount * 0.01 * 0.25 * typeMultiplier * rateAdjustment) / 5) * 5;
   impactOutput.textContent = new Intl.NumberFormat('en-AU', { style: 'currency', currency: 'AUD', maximumFractionDigits: 0 }).format(impact);
+  sessionStorage.setItem('loanAmount', String(amount));
 }
 
 [amountInput, loanType, rateInput].forEach((field) => field.addEventListener('input', updateImpact));
